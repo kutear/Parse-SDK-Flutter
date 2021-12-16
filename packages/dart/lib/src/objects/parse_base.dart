@@ -200,7 +200,7 @@ abstract class ParseBase {
     } else {
       _getObjectData()[key] = value;
     }
-    _unsavedChanges[key] = _getObjectData()[key];
+    _unsavedChanges[key] = ParseMergeTool().mergeWithPrevious(_unsavedChanges[key], value);;
   }
 
   /// Gets type [T] from objectData

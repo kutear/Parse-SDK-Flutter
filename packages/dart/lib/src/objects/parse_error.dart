@@ -79,7 +79,7 @@ class ParseError {
     exceptionString += '\nParseException (Type: $type) :';
     exceptionString += '\nCode: $code';
     exceptionString += '\nMessage: $message';
-    exceptionString += '----';
+    exceptionString += '\n----';
     return exceptionString;
   }
 }
